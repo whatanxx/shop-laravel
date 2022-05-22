@@ -1,0 +1,53 @@
+{
+    "workbench.colorTheme": "Monokai Dimmed",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "python.formatting.provider": "autopep8",
+    "[python]": {
+      "editor.formatOnSave": true
+    },
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    "emmet.includeLanguages": { "django-html": "html" },
+    "files.associations": {
+      "**/*.html": "html",
+      "**/templates/**/*.html": "django-html",
+      "**/templates/**/*": "django-txt",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "[php]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[blade]": {
+      "editor.defaultFormatter": "amirmarmul.laravel-blade-vscode",
+      "editor.formatOnSave": true
+    },
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "html.format.endWithNewline": false,
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.indentHandlebars": false,
+    "html.format.indentInnerHtml": false,
+    "html.format.maxPreserveNewLines": null,
+    "html.format.preserveNewLines": true,
+    "html.format.wrapLineLength": 120,
+    "html.format.wrapAttributes": "auto",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "explorer.confirmDragAndDrop": false,
+    "editor.linkedEditing": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "update.enableWindowsBackgroundUpdates": false
+  }

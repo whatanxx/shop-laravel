@@ -128,5 +128,10 @@
                 </div>
             </div>
         </div>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script>
+            $(document).ready(function(){
+            $(".links").hide(); 
+        });
     </body>
 </html>

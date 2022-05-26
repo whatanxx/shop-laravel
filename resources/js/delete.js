@@ -1,5 +1,5 @@
 $(function () {
-    $(".delete").trigger("click")(function () {
+    $(".delete").click(function () {
         Swal.fire({
             title: "Czy na pewno chcesz usunąć rekord",
 

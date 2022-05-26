@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 
 use App\Models\User;
+use Illuminate\Contracts\View\View;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
@@ -11,9 +13,9 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return View
      */
-    public function index()
+    public function index(): View
     {
         return view('users.index', [
             'users' => User::paginate(3)
@@ -79,9 +81,9 @@ class UserController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $user\
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function destroy(User $user)
+    public function destroy(User $user): JsonResponse
     {
         $user->delete();
         return response()->json(

@@ -4,6 +4,7 @@ try {
     window.$ = window.jQuery = require("jquery");
     window.Popper = require("@popperjs/core");
     window.bootstrap = require("bootstrap");
+    window.Swal = require("sweetalert2");
 } catch (e) {}
 
 /**
